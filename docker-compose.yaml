@@ -1,0 +1,9 @@
+services:
+  kata-pest:
+    container_name: kata-pest
+    build: docker/
+    volumes:
+      - ./:/var/kata-pest
+    working_dir: /var/kata-pest
+    user: ubuntu
+    tty: true
